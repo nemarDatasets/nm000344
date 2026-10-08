@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
-  "title": "CastillosBurstVEP100",
-  "description": "A 12-participant EEG dataset of a 4-class code-modulated visual evoked potential (c-VEP) reactive brain-computer interface study. It compares burst c-VEP sequences with m-sequences at 100% and 40% amplitude depth. Data were recorded with a 32-channel BrainProducts LiveAmp system at 500 Hz and used to evaluate CNN-based decoding, calibration duration, and user experience.",
-  "methods_description": "Twelve healthy participants completed an offline 4-class c-VEP protocol with a factorial design (burst vs m-sequence, 100% vs 40% amplitude depth). EEG was recorded at 500 Hz with a 32-channel BrainProducts LiveAmp, and stimuli were presented with PsychoPy on a 60 Hz monitor. Participants focused on cued targets in random order across blocks. Decoding used a CNN with 250 ms sliding windows and Pearson correlation for target selection.",
+  "title": "Castillos et al. 2023, Burst c-VEP, 100% amplitude depth: Burst c-VEP Based BCI: Optimizing stimulus design for enhanced classification with minimal calibration data and improved user experience",
+  "description": "EEG recordings from 12 healthy participants performing an offline 4-class code-modulated visual evoked potential (c-VEP) task with burst c-VEP stimulation at 100% amplitude depth. Burst sequences consist of short aperiodic flashes at 2-4 flashes per second. The dataset supports reactive brain-computer interface research on stimulus design, minimal calibration data, and user experience. Data were recorded with a 32-channel BrainProducts LiveAmp system.",
+  "methods_description": "EEG was recorded at 500 Hz with a 32-channel BrainProducts LiveAmp system (active Acticap electrodes, reference FCz). Participants focused on cued targets in a factorial design (burst vs m-sequence, 100% vs 40% amplitude depth) presented on a 60 Hz monitor with PsychoPy. Data were decoded with a CNN using 250 ms sliding windows and Pearson correlation for target selection.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -26,23 +26,25 @@
       "term": "code-modulated VEP"
     },
     {
-      "term": "reactive BCI"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "burst stimulation"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+    },
+    {
+      "term": "burst c-VEP"
     },
     {
       "term": "convolutional neural network"
     },
     {
-      "term": "Evoked Potentials, Visual",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "visual comfort"
     }
   ],
   "related_identifiers": [
@@ -86,10 +88,6 @@
     },
     {
       "funder_name": "Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
-    },
-    {
-      "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
-      "award_title": "Chair for Neuroadaptive Technology"
     }
   ],
   "resource_type_general": "Dataset",
@@ -110,5 +108,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "c7d425773671a0b950252ca578d738dd6d02b2c89b9bee95aa233fefae89a999"
+  "source_hash": "a649cdf637dc950772f2d520fca2732a26de8e929ed73620433ea7a53db39138"
 }
